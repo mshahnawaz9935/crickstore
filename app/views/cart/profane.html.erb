@@ -1,0 +1,16 @@
+<h1>Home</h1>
+
+<img src="assets/xmasshop.jpg" height="300" width="650"/>
+<h3>THE 2015 TOP BRAND CRICKET BATS AND EQUIPMENT HAVE ARRIVED IN ED SPORTS CRICKET SPECIALIST SHOP - BUY IN-STORE OR ONLINE</h3>
+<br>
+<br>
+<br>
+<h1>Check that you are a cricket lover</h1>
+<br>
+<%= form_tag "/validate" do %>
+<%= text_field_tag :search_string %>
+<%= submit_tag "Play" %>
+<% end %>
+<br>
+<br>
+<strong>The profaned string is <%= @result %></strong>
